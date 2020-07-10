@@ -32,7 +32,11 @@ public class Main {
     w.name = "そうすけ";
     w.hp = 18;
 
+    // 勇者が持つ金額をランダムで取得
+    Hero.setRandomMoney();
+
     // 冒険の始まり
+    System.out.println("勇者の所持金は" + Hero.money + "円です。");
     h.slip();
     c.selfAid();
     c.selfAid();
