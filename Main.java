@@ -1,11 +1,18 @@
 public class Main {
   public static void main(String[] args){
-    // 1.勇者のインスタンスを生成
+
+    // Swordのインスタンスを作成
+    Sword s = new Sword();
+    s.name = "雷神の剣";
+    s.damage = 36;
+    // 勇者のインスタンスを生成
     Hero h = new Hero();
-    // 2.フィールドに初期値をセット
+    // フィールドに初期値をセット
     h.name = "ケンタ";
     h.hp = 23;
+    h.sword = s;
     System.out.println("勇者" + h.name + "を生み出した！");
+    System.out.println("勇者" + h.name + "は" + h.sword.name + "を装備しています。");
 
     // お化けキノコのインスタンスの生成
     Matango m1 = new Matango();
