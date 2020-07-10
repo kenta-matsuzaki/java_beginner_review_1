@@ -29,6 +29,11 @@ public class Main {
     c.name = "美穂子";
     System.out.println("聖職者" + c.name + "を生み出した！");
 
+    // 魔法使いインスタンスの作成
+    Wizard w = new Wizard();
+    w.name = "そうすけ";
+    w.hp = 18;
+
     // 冒険の始まり
     h.slip();
     c.selfAid();
@@ -38,6 +43,7 @@ public class Main {
     c.pray(6);
     m1.run();
     m2.run();
+    w.heal(h);
     h.run();
   }
 }
