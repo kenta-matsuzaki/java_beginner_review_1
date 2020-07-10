@@ -6,10 +6,8 @@ public class Main {
     s.name = "雷神の剣";
     s.damage = 36;
     // 勇者のインスタンスを生成
-    Hero h = new Hero();
+    Hero h = new Hero("健太");
     // フィールドに初期値をセット
-    h.name = "ケンタ";
-    h.hp = 23;
     h.sword = s;
     System.out.println("勇者" + h.name + "を生み出した！");
     System.out.println("勇者" + h.name + "は" + h.sword.name + "を装備しています。");
