@@ -23,8 +23,7 @@ public class Main {
     System.out.println("お化けキノコ" + m2.suffix + "が現れた！");
 
     // 聖職者のインスタンスの作成
-    Cleric c = new Cleric();
-    c.name = "美穂子";
+    Cleric c = new Cleric("美穂子");
     System.out.println("聖職者" + c.name + "を生み出した！");
 
     // 魔法使いインスタンスの作成
