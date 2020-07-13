@@ -1,6 +1,6 @@
 public class Hero {
   String name;
-  int hp;
+  private int hp;
   static int money;
   Sword sword;
   
@@ -16,9 +16,14 @@ public class Hero {
     Hero.money = (int) (Math.random() * 1000 );
   }
 
-  void attack(){
+  public void attack(Matango m){
     System.out.println(this.name + "は攻撃した！");
     System.out.println("的に5ポイントのダメージを与えた！");
+    System.out.println("お化けキノコ" + m.suffix + "から2ポイントの反撃を受けた！");
+    this.hp -= 2;
+    if(this.hp <= 0){
+      this.die();
+    }
   }
 
   void sleep(){
@@ -42,5 +47,10 @@ public class Hero {
     System.out.println(this.name + "は、逃げ出した！");
     System.out.println("GAMEOVER");
     System.out.println("最終HPは" + this.hp + "でした。");
+  }
+
+  private void die(){
+    System.out.println(this.name + "は死んでしまった！");
+    System.out.println("GAME OVERです。");
   }
 }
