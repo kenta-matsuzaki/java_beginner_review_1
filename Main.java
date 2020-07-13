@@ -9,8 +9,8 @@ public class Main {
     Hero h = new Hero("健太");
     // フィールドに初期値をセット
     h.sword = s;
-    System.out.println("勇者" + h.name + "を生み出した！");
-    System.out.println("勇者" + h.name + "は" + h.sword.name + "を装備しています。");
+    System.out.println("勇者" + h.getName() + "を生み出した！");
+    System.out.println("勇者" + h.getName() + "は" + h.sword.name + "を装備しています。");
 
     // お化けキノコのインスタンスの生成
     Matango m1 = new Matango();
@@ -28,8 +28,8 @@ public class Main {
 
     // 魔法使いインスタンスの作成
     Wizard w = new Wizard();
-    w.name = "そうすけ";
-    w.hp = 18;
+    w.setName("そうすけ");
+    w.setHp(18);
 
     // 勇者が持つ金額をランダムで取得
     Hero.setRandomMoney();
