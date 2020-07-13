@@ -27,6 +27,13 @@ public class Hero {
     }
     this.name = name;
   }
+  
+  public int getHp(){
+    return this.hp;
+  }
+  public void setHp(int hp){
+    this.hp = hp;
+  }
 
   static void setRandomMoney(){
     Hero.money = (int) (Math.random() * 1000 );
