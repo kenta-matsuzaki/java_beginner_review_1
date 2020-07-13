@@ -1,5 +1,5 @@
 public class Hero {
-  String name;
+  private String name;
   private int hp;
   static int money;
   Sword sword;
@@ -10,6 +10,10 @@ public class Hero {
   }
   Hero(){
     this("だみー");
+  }
+
+  public String getName(){
+    return this.name;
   }
 
   static void setRandomMoney(){
