@@ -26,10 +26,15 @@ public class Main {
     Cleric c = new Cleric("美穂子");
     System.out.println("聖職者" + c.name + "を生み出した！");
 
+    // 魔法使いがしようする杖のインスタンスを作成
+    Wand wand = new Wand();
+    wand.setName("真紅の杖");
+    wand.setPower(6);
     // 魔法使いインスタンスの作成
     Wizard w = new Wizard();
     w.setName("そうすけ");
     w.setHp(18);
+    w.setWand(wand);
 
     // 勇者が持つ金額をランダムで取得
     Hero.setRandomMoney();
