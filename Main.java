@@ -39,6 +39,9 @@ public class Main {
     // 勇者が持つ金額をランダムで取得
     Hero.setRandomMoney();
 
+    // スーパーヒーローのインスタンスを作成
+    SuperHero sh = new SuperHero();
+
     // 冒険の始まり
     System.out.println("勇者の所持金は" + Hero.money + "円です。");
     h.slip();
@@ -51,5 +54,6 @@ public class Main {
     m2.run();
     w.heal(h);
     h.run();
+    sh.run();
   }
 }
