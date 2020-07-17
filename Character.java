@@ -1,4 +1,4 @@
-public class Character {
+public abstract class Character {
   String name;
   int hp;
   
@@ -8,9 +8,5 @@ public class Character {
   }
 
   // 戦う
-  public void attack(Matango m) {
-    System.out.println(this.name + "の攻撃！");
-    m.hp -= ??;
-    System.out.println("敵に？？ポイントのダメージを与えた！");
-  }
+  public abstract void attack(Matango m);
 }
